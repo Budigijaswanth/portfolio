@@ -2,8 +2,6 @@ import Link from 'next/link';
 import { FiGithub, FiLinkedin, FiTwitter, FiHeart } from 'react-icons/fi';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="bg-gray-50 dark:bg-gray-900 py-12 px-4">
       <div className="max-w-7xl mx-auto">
@@ -13,7 +11,7 @@ export default function Footer() {
               Portfolio
             </Link>
             <p className="mt-4 text-gray-700 dark:text-gray-300">
-              A passionate full stack developer building modern web applications.
+              A passionate Business Analytics professional specializing in data-driven solutions.
             </p>
           </div>
 
@@ -51,7 +49,7 @@ export default function Footer() {
             </h3>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Budigijaswanth"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
@@ -60,7 +58,7 @@ export default function Footer() {
                 <FiGithub size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/jaswanth-reddy-budigi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
@@ -69,7 +67,7 @@ export default function Footer() {
                 <FiLinkedin size={20} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
@@ -81,10 +79,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
-          <p className="text-gray-700 dark:text-gray-300 flex items-center justify-center">
-            © {currentYear} Your Name. All rights reserved. Made with 
-            <FiHeart className="text-red-500 mx-1" /> using Next.js
+        <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+          <p className="text-gray-700 dark:text-gray-300 text-center">
+            © 2025 Jaswanth Budigi. All rights reserved.
+          </p>
+          <p className="text-gray-600 dark:text-gray-400 text-center mt-2 text-sm flex items-center justify-center">
+            Made with <FiHeart className="text-red-500 mx-1" /> using Next.js
           </p>
         </div>
       </div>

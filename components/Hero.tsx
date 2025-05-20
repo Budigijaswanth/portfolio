@@ -29,9 +29,9 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-4 text-black dark:text-white">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-4">
                 <span className="block text-primary">Hi, I'm</span>
-                <span className="block">Jaswanth Budigi</span>
+                <span className="block text-gray-900 dark:text-white">Jaswanth Budigi</span>
               </h1>
             </motion.div>
 
@@ -40,7 +40,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <h2 className="text-xl sm:text-2xl lg:text-3xl text-black dark:text-white mb-8">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-8">
                 Business Analytics Professional
               </h2>
             </motion.div>
