@@ -29,7 +29,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-4 text-black">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-4 text-black dark:text-white">
                 <span className="block text-primary">Hi, I'm</span>
                 <span className="block">Jaswanth Budigi</span>
               </h1>
@@ -40,7 +40,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <h2 className="text-xl sm:text-2xl lg:text-3xl text-black mb-8">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl text-black dark:text-white mb-8">
                 Business Analytics Professional
               </h2>
             </motion.div>
@@ -51,9 +51,6 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="max-w-xl mx-auto lg:mx-0"
             >
-              <h3 className="text-lg text-black mb-8">
-                About
-              </h3>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
                 A passionate Business Analytics professional with expertise in data analysis, machine learning, and mechanical engineering.
                 Dedicated to transforming data into actionable insights.
