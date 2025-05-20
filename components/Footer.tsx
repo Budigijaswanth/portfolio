@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Link href="/" className="text-2xl font-bold text-primary">
-              Portfolio
+              My Portfolio
             </Link>
             <p className="mt-4 text-gray-700 dark:text-gray-300">
               A passionate Business Analytics professional specializing in data-driven solutions.
