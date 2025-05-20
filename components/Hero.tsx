@@ -8,6 +8,19 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center py-16 sm:py-24 px-4 overflow-hidden">
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          className="absolute inset-0 min-w-full min-h-full object-cover opacity-30"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/videos/bg.mp4" type="video/mp4" />
+        </video>
+      </div>
+
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
