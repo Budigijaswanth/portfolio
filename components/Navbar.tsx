@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FiMenu, FiX, FiSun, FiMoon } from 'react-icons/fi';
+import { FiMenu, FiX, FiSun, FiMoon, FiUser, FiCode, FiAward, FiMail, FiCodesandbox } from 'react-icons/fi';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,17 +24,18 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-primary">
+            <Link href="/" className="text-2xl font-bold text-primary flex items-center">
+              <FiCodesandbox className="mr-2 text-primary animate-pulse" size={24} />
               My Portfolio
             </Link>
           </div>
 
           {/* Desktop menu */}
           <nav className="hidden md:flex items-center space-x-8">
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#projects">Projects</NavLink>
-            <NavLink href="#skills">Skills</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
+            <NavLink href="#about"><FiUser className="inline mr-2" /> About</NavLink>
+            <NavLink href="#projects"><FiCode className="inline mr-2" /> Projects</NavLink>
+            <NavLink href="#skills"><FiAward className="inline mr-2" /> Skills</NavLink>
+            <NavLink href="#contact"><FiMail className="inline mr-2" /> Contact</NavLink>
             
             {/* Theme Toggle Button */}
             <button 
@@ -85,10 +86,18 @@ export default function Navbar() {
           transition={{ duration: 0.3 }}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg">
-            <MobileNavLink href="#about" onClick={() => setIsOpen(false)}>About</MobileNavLink>
-            <MobileNavLink href="#projects" onClick={() => setIsOpen(false)}>Projects</MobileNavLink>
-            <MobileNavLink href="#skills" onClick={() => setIsOpen(false)}>Skills</MobileNavLink>
-            <MobileNavLink href="#contact" onClick={() => setIsOpen(false)}>Contact</MobileNavLink>
+            <MobileNavLink href="#about" onClick={() => setIsOpen(false)}>
+              <FiUser className="inline mr-2" /> About
+            </MobileNavLink>
+            <MobileNavLink href="#projects" onClick={() => setIsOpen(false)}>
+              <FiCode className="inline mr-2" /> Projects
+            </MobileNavLink>
+            <MobileNavLink href="#skills" onClick={() => setIsOpen(false)}>
+              <FiAward className="inline mr-2" /> Skills
+            </MobileNavLink>
+            <MobileNavLink href="#contact" onClick={() => setIsOpen(false)}>
+              <FiMail className="inline mr-2" /> Contact
+            </MobileNavLink>
           </div>
         </motion.div>
       )}
