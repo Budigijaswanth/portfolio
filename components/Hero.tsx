@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiArrowRight, FiGithub, FiLinkedin, FiTwitter, FiMail, FiFileText } from 'react-icons/fi';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -73,7 +73,7 @@ export default function Hero() {
                 href="#contact"
                 className="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors duration-300"
               >
-                Contact Me
+                <FiMail className="mr-2" /> Contact Me
               </Link>
               <a
                 href="/files/resume.pdf"
@@ -81,7 +81,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors duration-300"
               >
-                View Resume
+                <FiFileText className="mr-2" /> View Resume
               </a>
             </motion.div>
 
