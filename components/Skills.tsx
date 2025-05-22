@@ -20,9 +20,7 @@ const skills = [
       { name: "Python", level: 85 },
       { name: "Core Java", level: 80 },
       { name: "Supervised ML", level: 85 },
-      { name: "Unsupervised ML", level: 80 },
-      { name: "Regression Analysis", level: 85 }
-      
+      { name: "Unsupervised ML", level: 80 }
     ]
   },
   {
