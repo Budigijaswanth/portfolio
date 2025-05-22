@@ -37,7 +37,7 @@ export default function About() {
               <div>
                 <h4 className="font-medium">Master of Business Analytics</h4>
                 <p className="text-gray-600 dark:text-gray-400">Kent State University, Ohio</p>
-                <p className="text-sm text-gray-500">Expected May 2025 • GPA: 3.7/4.0</p>
+                <p className="text-sm text-gray-500">Expected May 2025 • GPA: 3.8/4.0</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
                   Relevant Coursework: Data Visualization, Data Analytics, SQL, Database Management
                 </p>
